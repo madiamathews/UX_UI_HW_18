@@ -1,0 +1,75 @@
+html {
+    background-color: #FFFCFA;
+}
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px 50px 50px;
+}
+li {
+    display: inline;
+    padding: 50px 50px 50px 50px;
+    font-size: larger;
+}
+.logo {
+    width: 100px;
+}
+.flexContainer {
+    display: inline-flex;
+    flex-direction: row;
+}
+#userResearch {
+    width: 33%;
+    padding: 20px 20px 20px 20px;
+    margin: 25px;
+}
+#uiElements {
+    width: 33%;
+    padding: 20px 20px 20px 20px;
+    margin: 25px;
+}
+#userEmpathy {
+    width: 33%;
+    padding: 20px 20px 20px 20px;
+    margin: 25px;
+}
+#userResearch img {
+    height: 300px;
+    width: 400px;
+}
+#uiElements img {
+    height: 300px;
+    width: 400px;
+}
+#userEmpathy img {
+    height: 300px;
+    width: 400px;
+}
+.workGrid {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 2;
+}
+@media only screen and  (max-width: 600) {
+    .flexContainer {
+        flex-direction: column;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "userResearch"
+        "uiElements"
+        "userEmpathy"
+        ;
+    }
+    #userResearch {
+        width: 100%;
+    }
+    #uiElements {
+        width: 100%;
+    }
+    #userEmpathy {
+        width: 100%;
+    }
+}
